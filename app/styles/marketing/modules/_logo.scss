@@ -1,0 +1,50 @@
+.main-logo{
+  font-size: 1em;
+  & > a{
+    @extend %main-sprite;
+    @extend %image-replace;
+    background-position: -5px -6px;
+    width: 253px;
+    height: 39px;
+    @media #{$medium-max} {
+      height: 28px;
+      width: 180px;
+    }
+  }
+}
+
+@mixin logo-variant($large-size, $small-size) {
+  a{
+    background-position: $small-size;
+    @media #{$medium-max} {
+      background-position: $large-size;
+    }
+  }
+}
+
+.main-logo--light{
+  @include logo-variant( 0 -701px, 0 -511px);
+}
+.main-logo--color{
+  @include logo-variant( 0 -608px, 0 -378px);
+}
+.main-logo--dark{
+  @include logo-variant( 0px -444px, 0 -654px);
+}
+.main-logo--brand{
+  @include logo-variant( 0px -562px, 0 -312px);
+}
+
+.main-logo--offers{
+  @include logo-variant( -1px -751px, -1px -751px);
+  float: none !important;
+  display: inline-block;
+  & > a{
+    width: 204px;
+    height: 20px;
+    @media #{$medium-max} {
+      width: 204px;
+      height: 20px;
+    }
+  }
+}

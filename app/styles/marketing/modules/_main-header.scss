@@ -1,0 +1,39 @@
+.main-header{
+	background-color: $color-brand;
+	padding: $half-spacing-unit;
+}
+
+.main-navigation{
+	@include font-size(18px);
+	font-weight: 600;
+}
+
+.main-navigation__item{
+	padding: 0 $half-spacing-unit / 2;
+	> a{
+		color: black;
+		transition: color 0.2s ease-out;
+		&:hover{
+			color: white;
+		}
+	}
+}
+
+.header-container{
+	@extend %grid;
+	@extend %grid--middle;
+}
+
+.header__logo-area,
+.header__navigation-area{
+	@extend %grid__item;
+}
+
+.header__logo-area{
+	@extend %extra-small--one-third;
+}
+
+.header__navigation-area{
+	@extend %extra-small--two-thirds;
+	text-align: right;
+}

@@ -1,0 +1,34 @@
+.pane{
+	padding: $base-spacing-unit * 2 0;
+	&.bg-lighter-gray,
+	&.bg-brand{
+		border-width: 1px 0;
+		border-style: solid;
+		border-color: transparent;
+	}
+	&.bg-lighter-gray{
+		border-color: darken($gray-lighter, 10%);
+	}
+	&.bg-brand{
+		border-color: darken($color-brand, 15%);
+		color: black;
+	}
+}
+
+.bg-lighter-gray{
+	background-color: $gray-lighter;
+}
+
+.bg-brand{
+	background-color: $color-brand;
+}
+
+.hero{
+	padding: $base-spacing-unit * 4 0;
+}
+
+.hero--main{
+	background-image: url('../images/forest.jpg');
+	color: white;
+	background-attachment: fixed;
+}
