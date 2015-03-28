@@ -84,6 +84,10 @@ img.full-width,
 // All-caps text
 .text-uppercase { text-transform: uppercase; }
 
+.vertical-middle{
+  vertical-align: middle;
+}
+
 
 // Stylized ampersand
 .amp { font: italic 110% Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif; }
@@ -133,10 +137,10 @@ img.full-width,
 }
 %main-sprite{
   .svg &{
-    background-image: image-url("new/sprite.svg");
+    background-image: url("../images/sprite.svg");
   }
   .no-svg &{
-    background-image: image-url("new/sprite.png");
+    background-image: url("../images/sprite.png");
   }
   background-repeat:no-repeat;
   display: inline-block;

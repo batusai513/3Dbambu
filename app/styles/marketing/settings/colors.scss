@@ -8,11 +8,13 @@ $gray:                             	#666666;
 $gray-light:                       	lighten(#000, 60%);   // #999
 $gray-lighter:                    	#f9f9f9;
 
+$color-gold:                        #EACB17;
+
 $brand-ui:                        	#DFDFDF;
 
 $color-foreground:                 	$gray;
 
-$brand-primary:                    	#EAC239;
+$brand-primary:                    	$color-gold;
 $brand-success:                    	#8ABF7B;
 $brand-info:                       	#00A5FF;
 $brand-warning:                    	orange;
@@ -26,9 +28,9 @@ $color-text-body                    : $gray-dark;
 $color-text-header-primary          : $gray-darker;
 
 
-$color-brand:                      	#fc3; //FF7800
+$color-brand:                      	$color-gold; //FF7800
 $body-bg:                          	white;
-$text-color:                       	$gray;
+$text-color:                       	#4A4A4A;
 $link-color:                       	#0E597C;
 $link-hover-color:                 	darken($link-color, 15%);
 $hr-border:                        	$gray-lighter;

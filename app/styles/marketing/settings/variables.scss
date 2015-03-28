@@ -13,26 +13,28 @@ $end: right;
 
 
 //Typography
-$font-family-sans-serif:            "Muli", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
+$font-family-sans-serif:            "san francisco", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
 $font-family-serif:                 "Lora", Cambria, Times New Roman, Times, serif !default;
 $font-family-base:                  $font-family-sans-serif;
 //$font-family-icons:                 "offers";
 
+$golden-ratio:                      1.5;
 
-$font-size-base:                    16px;
+$font-size-base:                    14px;
 $em-base:                           $font-size-base;
-$font-size-large:                   ceil($font-size-base * 1.16); //14px
+$font-weight-base:                  300;
+$font-size-large:                   ceil($font-size-base * 1.1428); //16px
 $font-size-small:                   ceil($font-size-base * 0.85); //11px
 $font-size-smaller:                 ceil($font-size-base * 0.75); //10px
 
-$font-size-h1:                      floor($font-size-base * 3); //36px
-$font-size-h2:                      ceil($font-size-base * 2.5); //30px
-$font-size-h3:                      ceil($font-size-base * 2); //23px
+$font-size-h1:                      floor($font-size-base * 2.571); //36px
+$font-size-h2:                      ceil($font-size-base * 2.14); //30px
+$font-size-h3:                      ceil($font-size-base * 2); //28px
 $font-size-h4:                      ceil($font-size-base * 1.5); //18px
 $font-size-h5:                      ceil($font-size-base * 1.16); //14px
 $font-size-h6:                      ceil($font-size-base * 1); //12px
 
-$line-height-base:                  23 / strip-units($font-size-base);
+$line-height-base:                  $golden-ratio;
 $line-height-computed:              floor($font-size-base * $line-height-base);
 
 $base-spacing-unit:                 $line-height-computed;
@@ -64,7 +66,7 @@ $border-radius-large:               6px;
 $border-radius-small:               3px;
 
 // Buttons
-$btn-font-weight:                normal;
+$btn-font-weight:                600;
 $button-border-width:            1px;
 
 $btn-default-color:              white;

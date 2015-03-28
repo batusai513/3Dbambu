@@ -1,0 +1,43 @@
+.hero{
+  padding: $base-spacing-unit * 4 0 $base-spacing-unit * 4;
+}
+
+.hero--main{
+  background-image: url('../images/main-hero-image.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  @media #{$small} {
+    padding: $base-spacing-unit * 7 0 $base-spacing-unit;
+    @include rem(500px, height);
+  }
+}
+
+.hero--main__title{
+  @include rem($font-size-h2);
+  font-weight: 200;
+  text-transform: uppercase;
+  b{
+    font-weight: 300;
+  }
+}
+
+.hero--main__subtitle{
+  font-weight: 400;
+}
+
+.title--bordered{
+  border-bottom: 1px solid;
+  padding-bottom: $half-spacing-unit;
+}
+
+blockquote{
+  &:before{
+    text-align: center;
+    font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+    font-size: 5em;
+    line-height: 1;
+    content: "\201C";
+    display: block;
+  }
+}

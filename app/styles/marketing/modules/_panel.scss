@@ -240,15 +240,6 @@ $panel-background-color-muted:           $ivory !default;
 
 .panel--default{
   @include panel-variant($brand-ui, inherit, #fff);
-
-  .panel__head--dual-color{
-    @media #{$medium-max} {
-      background: $bg-color-secondary;
-      padding: $padding-large-vertical*2 $padding-large-horizontal;
-      position: relative;
-      box-shadow: 0px 1px 0px 0px #fff;
-    }
-  }
 }
 
 .panel--session{

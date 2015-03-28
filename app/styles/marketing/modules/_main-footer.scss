@@ -9,21 +9,23 @@
 
 .footer-container{
 	@extend %grid;
+	@extend %grid--wide;
 }
 
 .footer__navigation,
 .footer__social,
 .footer__newsletter{
 	@extend %grid__item;
-	@extend %medium--one-third;
 	@extend %one-whole;
 }
 
 .footer__navigation,
 .footer__social{
+	@extend %medium--one-quarter;
 	@extend %small--one-half;
 }
 
 .footer__newsletter{
+	@extend %medium--one-half;
 	@extend %small--one-whole;
 }

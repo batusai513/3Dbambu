@@ -1,21 +1,30 @@
 .main-header{
-	background-color: $color-brand;
-	padding: $half-spacing-unit;
+	background-color: transparent;
+	width: 100%;
+	padding: $half-spacing-unit 0;
+	position: absolute;
+	@media #{$small} {
+		padding: $base-spacing-unit 0;
+	}
 }
 
 .main-navigation{
-	@include font-size(18px);
-	font-weight: 600;
+	font-weight: 400;
 }
 
 .main-navigation__item{
-	padding: 0 $half-spacing-unit / 2;
 	> a{
-		color: black;
-		transition: color 0.2s ease-out;
+		color: white;
+		transition: all 0.2s ease-out;
+		padding: $half-spacing-unit / 2 $half-spacing-unit;
+		display: inline-block;
+		border-radius: 100px;
 		&:hover{
 			color: white;
 		}
+	}
+	&.is-active a{
+		background-color: rgba(white, 0.22);
 	}
 }
 
@@ -30,10 +39,10 @@
 }
 
 .header__logo-area{
-	@extend %extra-small--one-third;
+	@extend %small--one-third;
 }
 
 .header__navigation-area{
-	@extend %extra-small--two-thirds;
+	@extend %small--two-thirds;
 	text-align: right;
 }

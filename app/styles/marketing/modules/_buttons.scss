@@ -27,7 +27,7 @@
 }
 
 .button-border{
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   text-transform: uppercase;
   transition: all 0.2s ease-in;
 }
@@ -54,6 +54,17 @@
   }
 }
 
+.button-border--brand{
+  border-color: $color-brand;
+  color: $color-brand;
+  &:hover,
+  &:active,
+  &:focus{
+    color: black;
+    background-color: $color-brand;
+  }
+}
+
 .group-buttons{
-  margin: $base-spacing-unit * 3 0 $base-spacing-unit * 2.5;
+  margin: $base-spacing-unit * 2 0 $base-spacing-unit * 2;
 }

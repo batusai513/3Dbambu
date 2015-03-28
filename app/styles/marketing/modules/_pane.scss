@@ -10,7 +10,7 @@
 		border-color: darken($gray-lighter, 10%);
 	}
 	&.bg-brand{
-		border-color: darken($color-brand, 15%);
+		border-color: darken($color-brand, 5%);
 		color: black;
 	}
 }
@@ -23,12 +23,45 @@
 	background-color: $color-brand;
 }
 
-.hero{
-	padding: $base-spacing-unit * 4 0;
+.pane--large{
+	@media #{$small} {
+		padding: $base-spacing-unit * 4 0;
+	}
 }
 
-.hero--main{
-	background-image: url('../images/forest.jpg');
+.pane--medium{
+	@media #{$small} {
+		padding: $base-spacing-unit * 3 0;
+	}
+}
+
+.pane--small{
+	padding: $base-spacing-unit 0;
+}
+
+.pane--spaces{
+	@extend .pane--large;
+	background-image: url('../images/pane-image-grid.jpg');
+	background-position: center;
+	background-size: cover;
 	color: white;
-	background-attachment: fixed;
+	@media #{$small} {
+		@include rem(400px, height);
+		padding: $base-spacing-unit * 4 0;
+	}
+}
+
+.pane--panels{
+	@extend .pane--large;
+}
+.pane--panels__image img{
+	display: none;
+	@media #{$medium} {
+		display: block;
+	}
+}
+.pane--panel__body{
+	@media #{$medium} {
+		padding-right: $base-spacing-unit * 7;
+	}
 }

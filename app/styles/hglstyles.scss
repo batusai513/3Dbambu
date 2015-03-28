@@ -19,6 +19,8 @@
 
 
 @import "marketing/core/core";
+@import "marketing/core/fonts";
+@import "marketing/core/font-icons";
 @import "marketing/core/typography";
 @import "marketing/core/layout";
 @import "marketing/core/grids";
@@ -28,6 +30,8 @@
 
 @import "marketing/modules/grid";
 @import "marketing/modules/pane";
+@import "marketing/modules/lists";
+@import "marketing/modules/logo";
 @import "marketing/modules/forms";
 @import "marketing/modules/buttons";
 @import "marketing/modules/button-group";
@@ -36,6 +40,7 @@
 @import "marketing/modules/sticky-footer";
 @import "marketing/modules/portfolio-grid";
 @import "marketing/modules/characteristics";
+@import "marketing/modules/hero";
 @import "marketing/modules/masthead";
 @import "marketing/modules/contact";
 

@@ -54,5 +54,5 @@ h5, .epsilon { @include rem(strip-units($font-size-h5)); }
 h6, .zeta { @include rem(strip-units($font-size-h6)); }
 
 p {
-  margin: 0 0 ($half-spacing-unit);
+  margin: 0 0 ($base-spacing-unit);
 }
