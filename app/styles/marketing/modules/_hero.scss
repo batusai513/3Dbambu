@@ -1,5 +1,8 @@
 .hero{
   padding: $base-spacing-unit * 4 0 $base-spacing-unit * 4;
+  @media #{$small} {
+    padding: $base-spacing-unit * 8 0 $base-spacing-unit;
+  }
 }
 
 .hero--main{
@@ -8,8 +11,47 @@
   background-size: cover;
   color: white;
   @media #{$small} {
-    padding: $base-spacing-unit * 7 0 $base-spacing-unit;
     @include rem(500px, height);
+  }
+}
+
+.hero--textures{
+  background-image: url('../images/hero-textures-image.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  @media #{$small} {
+    @include rem(350px, height);
+  }
+}
+
+.hero--reinvent{
+  background-image: url('../images/hero-reinvent-image.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  @media #{$small} {
+    @include rem(350px, height);
+  }
+}
+
+.hero--faq{
+  background-image: url('../images/hero-faq-image.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  @media #{$small} {
+    @include rem(350px, height);
+  }
+}
+
+.hero--contact{
+  background-image: url('../images/hero-contact-image.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  @media #{$small} {
+    @include rem(350px, height);
   }
 }
 

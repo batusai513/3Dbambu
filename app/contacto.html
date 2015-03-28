@@ -30,48 +30,42 @@
       <div class="container">
         <div class="header-container">
           <div class="header__logo-area">
-            <a href="/">
-              <img src="hgl-logo.svg" alt="3D Bambu, paneles decorativos">
-            </a>
+            <h1 class="main-logo">
+              <a href="/">
+                3D Bambu
+              </a>
+            </h1>
           </div><div class="header__navigation-area">
             <nav class="main-navigation">
               <ul class="nav flush--bottom">
                 <li class="nav__item main-navigation__item">
                   <a href="texturas.html">Texturas de Paneles</a>
-                  </li>
+                </li>
                 <li class="nav__item main-navigation__item">
                   <a href="caracteristicas.html">Características</a>
-                  </li>
+                </li>
                 <li class="nav__item main-navigation__item">
                   <a href="instalacion.html">Instalación</a>
-                  </li>
+                </li>
                 <li class="nav__item main-navigation__item">
                   <a href="faq.html">Preguntas Frecuentes</a>
-                  </li>
-                <li class="nav__item main-navigation__item">
+                </li>
+                <li class="nav__item main-navigation__item is-active">
                   <a href="contacto.html">Contacto</a>
-                  </li>
+                </li>
               </ul>
             </nav>
           </div>
         </div>
       </div>
     </header>
-    <section class="hero hero--main text-center">
+    <section class="hero hero--contact text-center">
       <div class="container">
         <h1 class="flush uppercase">Preguntas Frecuentes</h1>
       </div>
     </section>
 
-    <section class="pane">
-      <div class="container text-center">
-        <p class="flush">
-          Aqui encontrarás respuesta a las preguntas mas comunes
-        </p>
-      </div>
-    </section>
-
-    <section class="pane">
+    <section class="pane pane--large">
       <div class="container">
         <h1 class="text-center flush sr-only">Caracteristicas de los paneles</h1>
         <div class="contact-container">
@@ -81,12 +75,12 @@
                 <div class="grid__item small--one-half">
                   <div class="form-group">
                     <label class="sr-only" for="nombre">Nombre*</label>
-                    <input type="text" id="nombre" class="form-control" placeholder="Nombre Completo*">
+                    <input type="text" id="nombre" class="form-control input--large" placeholder="Nombre Completo*">
                   </div>
                 </div><div class="grid__item small--one-half">
                   <div class="form-group">
                     <label class="sr-only" for="telefono">Telefono*</label>
-                    <input type="text" id="telefono" class="form-control" placeholder="Teléfono*">
+                    <input type="text" id="telefono" class="form-control input--large" placeholder="Teléfono*">
                   </div>
                 </div>
               </div>
@@ -94,34 +88,34 @@
                 <div class="grid__item small--one-half">
                   <div class="form-group">
                     <label class="sr-only" for="email">Correo Electrónico*</label>
-                    <input type="text" id="email" class="form-control" placeholder="Correo Electrónico*">
+                    <input type="text" id="email" class="form-control input--large" placeholder="Correo Electrónico*">
                   </div>
                 </div><div class="grid__item small--one-half">
                   <div class="form-group">
                     <label class="sr-only" for="ciudad">Ciudad*</label>
-                    <input type="text" id="ciudad" class="form-control" placeholder="Ciudad*">
-                  </div>  
+                    <input type="text" id="ciudad" class="form-control input--large" placeholder="Ciudad*">
+                  </div>
                 </div>
               </div>
               <div class="grid">
                 <div class="grid__item small--one-half">
                   <div class="form-group">
                     <label class="sr-only" for="empresa">Empresa</label>
-                    <input type="text" id="empresa" class="form-control" placeholder="Empresa (opcional)">
+                    <input type="text" id="empresa" class="form-control input--large" placeholder="Empresa (opcional)">
                   </div>
                 </div><div class="grid__item small--one-half">
                   <div class="form-group">
                     <label class="sr-only" for="motivo">Motivo de Consulta</label>
-                    <input type="text" id="motivo" class="form-control" placeholder="">
-                  </div>  
+                    <input type="text" id="motivo" class="form-control input--large" placeholder="">
+                  </div>
                 </div>
               </div>
               <div class="form-group">
                 <label class="sr-only" for="mensaje">Escribe tu mensaje</label>
-                <textarea class="form-control" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribir mensaje..."></textarea>
+                <textarea class="form-control input--large" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribir mensaje..."></textarea>
               </div>
               <div class="text-right">
-                <input type="submit" class="button" value="Enviar">
+                <input type="submit" class="button button--primary button--large" value="Enviar">
               </div>
             </form>
           </div><div class="contact-data">
@@ -145,9 +139,9 @@
       <div class="container">
         <article class="footer-container">
           <div class="footer__navigation">
-            <h1 class="epsilon">Navegacion</h1>
+            <h1 class="epsilon title--bordered">Navegacion</h1>
             <nav>
-              <ul class="">
+              <ul class="list-unstyled">
                 <li class="">
                   <a href="texturas.html">Paneles 3D</a>
                 </li>
@@ -166,34 +160,35 @@
               </ul>
             </nav>
             </div><article class="footer__social">
-              <h1 class="epsilon">Somos sociales</h1>
-                <ul class="">
+              <h1 class="epsilon title--bordered">Somos sociales</h1>
+                <ul class="list-unstyled">
                   <li class="">
                     <a href="texturas.html">
-                      <span class="icon-facebook"></span>/3dbambu
+                      <span class="icon-facebook icon-2x push-half--right vertical-middle"></span> /3dbambu
                     </a>
                   </li>
                   <li class="">
                     <a href="caracteristicas.html">
-                      <span class="icon-instagram"></span>3dbambu
+                      <span class="icon-instagram icon-2x push-half--right vertical-middle"></span> 3dbambu
                     </a>
                   </li>
                   <li class="">
                     <a href="instalacion.html">
-                      <span class="icon-twitter"></span>@3dbambu
+                      <span class="icon-twitter icon-2x push-half--right vertical-middle"></span> @3dbambu
                     </a>
                   </li>
                 </ul>
             </article><article class="footer__newsletter">
-              <h1 class="epsilon">Suscribete</h1>
+              <h1 class="epsilon title--bordered">Suscribete</h1>
               <p>
-                Mantente al tanto de las promociones, noticias y concursos
+                Mantente al tanto de las promociones, <br> noticias y concursos
               </p>
-              <form action="">
+              <form class="form-inline" action="">
                 <div class="form-group">
-                  <input type="text" class="form-control">
-                  <input type="submit" class="button uppercase" value="Suscribirme">
+                <label for="newsletter" class="sr-only">Suscribete a nuestro newsletter</label>
+                  <input id="newsletter" name="newsletter" placeholder="Correo Electrónico" type="text" class="form-control input--large">
                 </div>
+                <input type="submit" class="button button--large button--primary text-uppercase" value="Suscribirme">
               </form>
             </article>
           </article>

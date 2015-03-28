@@ -18,6 +18,9 @@
 	border: 1px solid #f1f1f1;
 	overflow: hidden;
 	text-align: center;
+	img{
+		width: 100%;
+	}
 }
 .portfolio__content{
 	padding: 0 6px;
@@ -33,7 +36,7 @@
 	font-weight: 700;
 }
 .portfolio-item__text{
-	font-family: $font-family-serif;
+	font-weight: 300;
 }
 .portfolio-item__category{
 	@include font-size(13px);
