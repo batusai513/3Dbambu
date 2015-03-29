@@ -30,8 +30,8 @@ $font-size-smaller:                 ceil($font-size-base * 0.75); //10px
 $font-size-h1:                      floor($font-size-base * 2.571); //36px
 $font-size-h2:                      ceil($font-size-base * 2.14); //30px
 $font-size-h3:                      ceil($font-size-base * 2); //28px
-$font-size-h4:                      ceil($font-size-base * 1.5); //18px
-$font-size-h5:                      ceil($font-size-base * 1.16); //14px
+$font-size-h4:                      ceil($font-size-base * 1.571); //18px
+$font-size-h5:                      ceil($font-size-base * 1.1142); //14px
 $font-size-h6:                      ceil($font-size-base * 1); //12px
 
 $line-height-base:                  $golden-ratio;
@@ -43,7 +43,7 @@ $half-spacing-unit:                 $line-height-computed / 2;
 $headings-font-family:              $font-family-sans-serif;
 $headings-font-weight:              400;
 $headings-line-height:              1.1;
-$headings-color:                    inherit;
+$headings-color:                    #444444;
 
 // Components
 $padding-base-vertical:             6px;
@@ -100,9 +100,9 @@ $btn-font-weight:                600;
 //== Forms
 $input-bg:                       #fff;
 $input-bg-disabled:              $gray-lighter;
-$input-color:                    $gray;
+$input-color:                    #9B9B9B;
 $input-border-width:             1px;
-$input-border:                   #cccccc;
+$input-border:                   #EAEAEA;
 $input-border-radius:            $border-radius-base;
 $input-border-focus:             #66afe9;
 $input-color-placeholder:        #cccccc;
@@ -113,7 +113,7 @@ $legend-color:                   $brand-default;
 $legend-border-color:            transparent;
 $label-color:                    $gray;
 $input-font-weight:              400;
-$input-font-style:               italic;
+$input-font-style:               normal;
 
 
 $state-success-text:             #3c763d;

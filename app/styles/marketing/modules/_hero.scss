@@ -1,7 +1,10 @@
 .hero{
+  * {
+    color: inherit;
+  }
   padding: $base-spacing-unit * 4 0 $base-spacing-unit * 4;
   @media #{$small} {
-    padding: $base-spacing-unit * 8 0 $base-spacing-unit;
+    padding: $base-spacing-unit * 6 0 $base-spacing-unit;
   }
 }
 
@@ -32,6 +35,16 @@
   color: white;
   @media #{$small} {
     @include rem(350px, height);
+  }
+}
+
+.hero--instalation{
+  background-image: url('../images/hero-instalation-image.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  @media #{$small} {
+    @include rem(500px, height);
   }
 }
 

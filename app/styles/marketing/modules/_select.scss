@@ -28,19 +28,20 @@
 }
 /* Dropdown arrow */
 .select:after {
+  font-size: 1.5em;
   position: absolute;
   top: 50%;
-  right: 0.25rem;
+  right: 0.25em;
   display: inline-block;
   content: "";
   width: 0;
   height: 0;
-  margin-top: -.15rem;
+  margin-top: -.15em;
   pointer-events: none;
-  border-top: .25rem solid #D8D8D8;
-  border-right: .20rem solid transparent;
-  border-bottom: .20rem solid transparent;
-  border-left: .20rem solid transparent;
+  border-top: .20em solid #D8D8D8;
+  border-right: .20em solid transparent;
+  border-bottom: .20em solid transparent;
+  border-left: .20em solid transparent;
 }
 
 /* Active/open */

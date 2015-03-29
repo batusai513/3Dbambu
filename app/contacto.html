@@ -31,7 +31,7 @@
         <div class="header-container">
           <div class="header__logo-area">
             <h1 class="main-logo">
-              <a href="/">
+              <a href="index.html">
                 3D Bambu
               </a>
             </h1>
@@ -68,68 +68,107 @@
     <section class="pane pane--large">
       <div class="container">
         <h1 class="text-center flush sr-only">Caracteristicas de los paneles</h1>
+        <p class="flush--top push-half--bottom">
+          <em>
+            Los campos señalados con un asterisco (*) son obligatorios.
+          </em>
+        </p>
         <div class="contact-container">
           <div class="contact-form">
             <form action="">
               <div class="grid">
                 <div class="grid__item small--one-half">
-                  <div class="form-group">
+                  <div class="form-group has-feedback has-feedback--reverse">
                     <label class="sr-only" for="nombre">Nombre*</label>
                     <input type="text" id="nombre" class="form-control input--large" placeholder="Nombre Completo*">
+                    <span class="icon-user icon-lg form-control-feedback"></span>
                   </div>
                 </div><div class="grid__item small--one-half">
-                  <div class="form-group">
+                  <div class="form-group has-feedback has-feedback--reverse">
                     <label class="sr-only" for="telefono">Telefono*</label>
                     <input type="text" id="telefono" class="form-control input--large" placeholder="Teléfono*">
+                    <span class="icon-phone icon-lg form-control-feedback"></span>
                   </div>
                 </div>
               </div>
               <div class="grid">
                 <div class="grid__item small--one-half">
-                  <div class="form-group">
+                  <div class="form-group has-feedback has-feedback--reverse">
                     <label class="sr-only" for="email">Correo Electrónico*</label>
                     <input type="text" id="email" class="form-control input--large" placeholder="Correo Electrónico*">
+                    <span class="form-control-feedback icon-mail icon-lg"></span>
                   </div>
                 </div><div class="grid__item small--one-half">
-                  <div class="form-group">
+                  <div class="form-group has-feedback has-feedback--reverse">
                     <label class="sr-only" for="ciudad">Ciudad*</label>
                     <input type="text" id="ciudad" class="form-control input--large" placeholder="Ciudad*">
+                    <span class="icon-pin icon-lg form-control-feedback"></span>
                   </div>
                 </div>
               </div>
               <div class="grid">
                 <div class="grid__item small--one-half">
-                  <div class="form-group">
+                  <div class="form-group has-feedback has-feedback--reverse">
                     <label class="sr-only" for="empresa">Empresa</label>
                     <input type="text" id="empresa" class="form-control input--large" placeholder="Empresa (opcional)">
+                    <span class="icon-store icon-lg form-control-feedback"></span>
                   </div>
                 </div><div class="grid__item small--one-half">
                   <div class="form-group">
                     <label class="sr-only" for="motivo">Motivo de Consulta</label>
-                    <input type="text" id="motivo" class="form-control input--large" placeholder="">
+                    <div class="select">
+                      <select class="form-control input--large" id="motivo">
+                        <option>Motivo de Consulta</option>
+                        <option>Comentario</option>
+                        <option>Cotizar un producto</option>
+                        <option>Pregunta</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group has-feedback has-feedback--reverse">
                 <label class="sr-only" for="mensaje">Escribe tu mensaje</label>
                 <textarea class="form-control input--large" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribir mensaje..."></textarea>
+                <span class="icon-pencil icon-lg form-control-feedback"></span>
               </div>
-              <div class="text-right">
-                <input type="submit" class="button button--primary button--large" value="Enviar">
+              <div class="text-end">
+                <input type="submit" class="button button-border button-border--success button--large" value="Enviar">
               </div>
             </form>
           </div><div class="contact-data">
-            <p>
-              Teléfono <br>
-              3567023
-            </p>
-            <p>
-              Correo Electrónico <br>
-              <a href="mailto:comercial@3dbambu.co">comercial@3dbambu.co</a>
-            </p>
-            <p>
-              Direccion
-            </p>
+            <div class="media media--small push--bottom">
+               <div class="media__img">
+                 <span class="icon-phone icon-lg color-success"></span>
+               </div>
+               <div class="media__body">
+                <p>
+                  Teléfono <br>
+                  3567023
+                </p>
+               </div>
+            </div>
+            <div class="media media--small push--bottom">
+               <div class="media__img">
+                 <span class="icon-mail icon-lg color-success"></span>
+               </div>
+               <div class="media__body">
+                <p>
+                  Correo Electrónico <br>
+                  <a href="mailto:comercial@3dbambu.co">comercial@3dbambu.co</a>
+                </p>
+               </div>
+            </div>
+            <div class="media media--small push--bottom">
+               <div class="media__img">
+                 <span class="icon-pin icon-lg color-success"></span>
+               </div>
+               <div class="media__body">
+                <p>
+                  Direccion
+                </p>
+               </div>
+            </div>
           </div>
         </div>
       </div>
@@ -186,7 +225,7 @@
               <form class="form-inline" action="">
                 <div class="form-group">
                 <label for="newsletter" class="sr-only">Suscribete a nuestro newsletter</label>
-                  <input id="newsletter" name="newsletter" placeholder="Correo Electrónico" type="text" class="form-control input--large">
+                  <input id="newsletter" name="newsletter" placeholder="Correo Electrónico" type="text" class="form-control newsletter__input input--large">
                 </div>
                 <input type="submit" class="button button--large button--primary text-uppercase" value="Suscribirme">
               </form>

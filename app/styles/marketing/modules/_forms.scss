@@ -54,7 +54,7 @@ input[type=file]{
 
 .form-control {
   @include transition('border-color ease-in-out .15s, box-shadow ease-in-out .15s');
-  @include form-control-focus();
+  @include form-control-focus($brand-success);
   @include placeholder();
   display: block;
   width: 100%;
@@ -193,7 +193,7 @@ label>sup {
 
 .form-control-feedback {
   position: absolute;
-  top: ($line-height-computed + 2); // Height of the `label` and its margin
+  top: 0;
   right: 0;
   z-index: 2; // Ensure icon is above input groups
   display: block;
@@ -201,6 +201,7 @@ label>sup {
   height: $input-height-base;
   line-height: $input-height-base;
   text-align: center;
+  color: $gray-light;
 }
 .input--large + .form-control-feedback {
   width: $input-height-large;
@@ -233,14 +234,22 @@ label>sup {
   }
 }
 
-.has-feedback--oposite{
+.has-feedback--reverse{
   .form-control {
-    padding-right: 0;
+    padding-right: $padding-base-horizontal;
     padding-left: ($input-height-base);
   }
   .form-control-feedback{
     right: auto;
     left: 0;
+  }
+  &.input-lg,
+  .input--large{
+    padding-right: $padding-base-horizontal;
+  }
+  &.input-sm,
+  .input--small{
+    padding-right: $padding-small-horizontal;
   }
 }
 

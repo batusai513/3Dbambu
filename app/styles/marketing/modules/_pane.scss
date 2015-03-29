@@ -1,5 +1,8 @@
 .pane{
 	padding: $base-spacing-unit 0;
+	*{
+		color: inherit;
+	}
 	&.bg-lighter-gray,
 	&.bg-brand{
 		border-width: 1px 0;
@@ -62,6 +65,9 @@
 }
 .pane--panel__body{
 	@media #{$medium} {
-		padding-right: $base-spacing-unit * 7;
+		padding-right: $base-spacing-unit * 4;
+	}
+	@media #{$large} {
+		padding-right: $base-spacing-unit * 15;
 	}
 }

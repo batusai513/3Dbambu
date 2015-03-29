@@ -11,6 +11,7 @@
   background-image: none;
   border: $button-border-width solid transparent;
   white-space: nowrap;
+  transition: all 0.2s ease-out;
   &,
   &:active,
   &.is-active {
@@ -78,7 +79,7 @@
 }
 
 .button--huge {
-  @include button-size($padding-large-vertical * 2, $padding-large-horizontal * 4, $font-size-large, $line-height-large, 100px);
+  @include button-size(12px, $padding-large-horizontal * 2, $font-size-large, $line-height-large, 100px);
 }
 .button--large {
   @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, 100px);

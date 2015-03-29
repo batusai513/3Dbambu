@@ -31,7 +31,7 @@
         <div class="header-container">
           <div class="header__logo-area">
             <h1 class="main-logo">
-              <a href="/">
+              <a href="index.html">
                 3D Bambu
               </a>
             </h1>
@@ -59,14 +59,14 @@
         </div>
       </div>
     </header>
-    <section class="hero hero--main text-center">
+    <section class="hero hero--instalation text-center">
       <div class="container">
         <h1 class="flush uppercase">Instalando el panel 3d</h1>
         <p>Fácil y rápido</p>
       </div>
     </section>
 
-    <section class="pane">
+    <section class="pane pane--large">
       <div class="container text-center">
         <h1 class="uppercase">Instalación</h1>
         <p class="flush">
@@ -76,14 +76,14 @@
       </div>
     </section>
 
-    <section class="pane text-center bg-brand">
+    <section class="pane pane--medium text-center bg-lighter-gray">
       <div class="container text-center">
         <p>Mantente al tanto de promociones, noticias y concursos. <br> Suscribete a nuestro newsletter.</p>
-        <form action="">
+        <form action="" class="form-inline">
           <div class="form-group">
-            <input type="text" class="form-control">
-            <input type="submit" class="button uppercase" value="Suscribirme">
+            <input type="text" class="form-control newsletter__input input--large" placeholder="Correo Electrónico">
           </div>
+          <input type="submit" class="button button--primary button--large text-uppercase" value="Suscribirme">
         </form>
       </div>
     </section>
@@ -139,7 +139,7 @@
               <form class="form-inline" action="">
                 <div class="form-group">
                 <label for="newsletter" class="sr-only">Suscribete a nuestro newsletter</label>
-                  <input id="newsletter" name="newsletter" placeholder="Correo Electrónico" type="text" class="form-control input--large">
+                  <input id="newsletter" name="newsletter" placeholder="Correo Electrónico" type="text" class="form-control newsletter__input input--large">
                 </div>
                 <input type="submit" class="button button--large button--primary text-uppercase" value="Suscribirme">
               </form>

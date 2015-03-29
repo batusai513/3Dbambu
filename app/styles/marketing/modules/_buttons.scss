@@ -27,9 +27,10 @@
 }
 
 .button-border{
-  border: 2px solid transparent;
+  border: 2px solid;
   text-transform: uppercase;
   transition: all 0.2s ease-in;
+  background-color: transparent;
 }
 
 .button-border--black{
@@ -62,6 +63,28 @@
   &:focus{
     color: black;
     background-color: $color-brand;
+  }
+}
+
+.button-border--blue{
+  color: #21BEFF;
+  border-color: #21BEFF;
+  &:hover,
+  &:active,
+  &:focus{
+    color: white;
+    background-color: #21BEFF;
+  }
+}
+
+.button-border--success{
+  color: $brand-success;
+  border-color: $brand-success;
+  &:hover,
+  &:active,
+  &:focus{
+    color: white;
+    background-color: $brand-success;
   }
 }
 
