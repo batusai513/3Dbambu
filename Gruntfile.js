@@ -278,15 +278,15 @@ module.exports = function (grunt) {
     htmlmin: {
       dist: {
         options: {
-          collapseBooleanAttributes: true,
+          collapseBooleanAttributes: false,
           collapseWhitespace: false,
           conservativeCollapse: false,
           removeAttributeQuotes: false,
           removeCommentsFromCDATA: true,
           removeEmptyAttributes: false,
-          removeOptionalTags: true,
+          removeOptionalTags: false,
           removeRedundantAttributes: true,
-          useShortDoctype: true
+          useShortDoctype: false
         },
         files: [{
           expand: true,
@@ -427,7 +427,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'wiredep',
+//    'wiredep',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',

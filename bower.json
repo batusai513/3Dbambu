@@ -3,13 +3,13 @@
   "private": true,
   "dependencies": {
     "jquery": "~1.11.1",
+    "flexslider": "*",
     "modernizr": "~2.8.2",
     "csswizardry-grids": "~2.2.0",
     "inuitcss": "~5.0.1",
     "magnific-popup": "~1.0.0",
     "normalize.css": "~3.0.2",
     "respond": "~1.4.2",
-    "selectivizr": "~1.0.2",
-    "flexslider": "*"
+    "selectivizr": "~1.0.2"
   }
 }
