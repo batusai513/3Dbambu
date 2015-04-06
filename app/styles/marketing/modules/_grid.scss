@@ -2,6 +2,10 @@
 	@extend %grid;
 }
 
+.grid--wide{
+  @extend %grid--wide;
+}
+
 .grid--middle{
   @extend %grid--middle;
 }

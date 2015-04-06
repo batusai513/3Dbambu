@@ -1,1 +1,0 @@
-var Main=function(a,b){function c(){b(".flexslider").flexslider({controlNav:!1})}return{init:c}}(window,jQuery);$(function(){Main.init()});
