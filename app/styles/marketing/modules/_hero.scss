@@ -2,6 +2,7 @@
   * {
     color: inherit;
   }
+  background-repeat: no-repeat;
   padding: $base-spacing-unit * 4 0 $base-spacing-unit * 4;
   @media #{$small} {
     padding: $base-spacing-unit * 6 0 $base-spacing-unit;
@@ -9,62 +10,74 @@
 }
 
 .hero--main{
-  background-image: url('../images/main-hero-image.jpg');
-  background-attachment: fixed;
+  background-image: url('../images/main-hero-image-small.jpg');
+  background-position: right;
   background-size: cover;
   color: white;
   @media #{$small} {
+    background-image: url('../images/main-hero-image.jpg');
+    background-size: auto;
     @include rem(500px, height);
   }
 }
 
 .hero--textures{
-  background-image: url('../images/hero-textures-image.jpg');
-  background-attachment: fixed;
+  background-image: url('../images/hero-textures-image-small.jpg');
+  background-position: center;
   background-size: cover;
   color: white;
   @media #{$small} {
-    @include rem(350px, height);
+    background-image: url('../images/hero-textures-image.jpg');
+    background-size: auto;
+    @include rem(400px, height);
   }
 }
 
 .hero--reinvent{
-  background-image: url('../images/hero-reinvent-image.jpg');
-  background-attachment: fixed;
+  background-image: url('../images/hero-reinvent-image-small.jpg');
+  background-position: center;
   background-size: cover;
   color: white;
   @media #{$small} {
+    background-image: url('../images/hero-reinvent-image.jpg');
+    background-size: auto;
     @include rem(350px, height);
   }
 }
 
 .hero--instalation{
-  background-image: url('../images/hero-instalation-image.jpg');
-  background-attachment: fixed;
+  background-image: url('../images/hero-instalation-image-small.jpg');
+  background-position: center;
   background-size: cover;
   color: white;
   @media #{$small} {
+    background-image: url('../images/hero-instalation-image.jpg');
+    background-size: auto;
     @include rem(500px, height);
   }
 }
 
 .hero--faq{
-  background-image: url('../images/hero-faq-image.jpg');
-  background-attachment: fixed;
+  background-image: url('../images/hero-faq-image-small.jpg');
+  background-position: center;
   background-size: cover;
   color: white;
   @media #{$small} {
+    background-image: url('../images/hero-faq-image.jpg');
+    background-size: auto;
     @include rem(350px, height);
   }
 }
 
 .hero--contact{
-  background-image: url('../images/hero-contact-image.jpg');
-  background-attachment: fixed;
+  background-image: url('../images/hero-contact-image-small.jpg');
+  background-position: center;
   background-size: cover;
   color: white;
   @media #{$small} {
-    @include rem(350px, height);
+    background-image: url('../images/hero-contact-image.jpg');
+    background-size: auto;
+    @include rem(400px, height);
   }
 }
 
