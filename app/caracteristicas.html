@@ -154,17 +154,17 @@
               <h1 class="epsilon title--bordered">Somos sociales</h1>
                 <ul class="list-unstyled">
                   <li class="">
-                    <a href="texturas.html">
+                    <a href="https://www.facebook.com/3dbambu">
                       <span class="icon-facebook icon-2x push-half--right vertical-middle"></span> /3dbambu
                     </a>
                   </li>
                   <li class="">
-                    <a href="caracteristicas.html">
+                    <a href="https://instagram.com/3dbambu/">
                       <span class="icon-instagram icon-2x push-half--right vertical-middle"></span> 3dbambu
                     </a>
                   </li>
                   <li class="">
-                    <a href="instalacion.html">
+                    <a href="https://twitter.com/3dbambu">
                       <span class="icon-twitter icon-2x push-half--right vertical-middle"></span> @3dbambu
                     </a>
                   </li>
@@ -174,10 +174,11 @@
               <p>
                 Mantente al tanto de las promociones, <br> noticias y concursos
               </p>
-              <form class="form-inline" action="">
+              <form class="form-inline js-contact-form" action="/formmail.php" name="newsletter_mail">
+                <input type="hidden" name="recipients" value="comercial@3dbambu.co">
                 <div class="form-group">
                 <label for="newsletter" class="sr-only">Suscribete a nuestro newsletter</label>
-                  <input id="newsletter" name="newsletter" placeholder="Correo Electrónico" type="text" class="form-control newsletter__input input--large">
+                  <input required id="newsletter" name="newsletter" placeholder="Correo Electrónico" type="text" class="form-control newsletter__input input--large">
                 </div>
                 <input type="submit" class="button button--large button--primary text-uppercase" value="Suscribirme">
               </form>
@@ -194,6 +195,7 @@
     <script src="bower_components/respond/dest/respond.src.js"></script>
     <script src="bower_components/selectivizr/selectivizr.js"></script>
     <script src="bower_components/flexslider/jquery.flexslider.js"></script>
+    <script src="bower_components/jquery.validate/dist/jquery.validate.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

@@ -66,7 +66,8 @@
         </p>
         <div class="contact-container">
           <div class="contact-form">
-            <form action="" novalidate="novalidate" class="js-contact-form">
+            <form action="/formmail.php" novalidate="novalidate" name="contacto_mail" class="js-contact-form">
+              <input type="hidden" name="recipients" value="comercial@3dbambu.co, gerencia@3dbambu.co">
               <div class="grid">
                 <div class="grid__item small--one-half">
                   <div class="form-group has-feedback has-feedback--reverse">
@@ -106,9 +107,9 @@
                   </div>
                 </div><div class="grid__item small--one-half">
                   <div class="form-group">
-                    <label class="sr-only" for="motivo">Motivo de Consulta</label>
+                    <label class="sr-only" for="subject">Motivo de Consulta</label>
                     <div class="select">
-                      <select class="form-control input--large" id="motivo" name="motivo" required>
+                      <select class="form-control input--large" id="subject" name="subject" required>
                         <option value="">Motivo de Consulta</option>
                         <option value="comentario">Comentario</option>
                         <option value="cotizar">Cotizar un producto</option>
@@ -195,17 +196,17 @@
               <h1 class="epsilon title--bordered">Somos sociales</h1>
                 <ul class="list-unstyled">
                   <li class="">
-                    <a href="texturas.html">
+                    <a href="https://www.facebook.com/3dbambu">
                       <span class="icon-facebook icon-2x push-half--right vertical-middle"></span> /3dbambu
                     </a>
                   </li>
                   <li class="">
-                    <a href="caracteristicas.html">
+                    <a href="https://instagram.com/3dbambu/">
                       <span class="icon-instagram icon-2x push-half--right vertical-middle"></span> 3dbambu
                     </a>
                   </li>
                   <li class="">
-                    <a href="instalacion.html">
+                    <a href="https://twitter.com/3dbambu">
                       <span class="icon-twitter icon-2x push-half--right vertical-middle"></span> @3dbambu
                     </a>
                   </li>
@@ -215,7 +216,8 @@
               <p>
                 Mantente al tanto de las promociones, <br> noticias y concursos
               </p>
-              <form class="form-inline" action="">
+              <form class="form-inline js-contact-form" action="/formmail.php" name="newsletter_mail">
+                <input type="hidden" name="recipients" value="comercial@3dbambu.co">
                 <div class="form-group">
                 <label for="newsletter" class="sr-only">Suscribete a nuestro newsletter</label>
                   <input id="newsletter" name="newsletter" placeholder="Correo Electrónico" class="form-control newsletter__input input--large">

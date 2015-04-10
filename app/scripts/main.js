@@ -26,22 +26,24 @@ var Main = (function(window, $){
     });
 
 
-		$('.flexslider').flexslider({
-			controlNav: false,
-		});
+  	$('.flexslider').flexslider({
+  		controlNav: false,
+  	});
 
-    $('.js-contact-form').validate({
-      errorClass: 'has-error',
-      validClass: 'has-success',
-      highlight: function(el, errorClass, validClass){
-        $(el).parents('.form-group').addClass(errorClass, validClass)
-      },
-      unhighlight: function(el, errorClass, validClass){
-        $(el).parents('.form-group').removeClass(errorClass, validClass)
-      },
-      errorPlacement: function(error, element){
-        error.appendTo(element.closest('.form-group'))
-      }
+    $('.js-contact-form').each(function(){
+      $(this).validate({
+        errorClass: 'has-error',
+        validClass: 'has-success',
+        highlight: function(el, errorClass, validClass){
+          $(el).parents('.form-group').addClass(errorClass, validClass);
+        },
+        unhighlight: function(el, errorClass, validClass){
+          $(el).parents('.form-group').removeClass(errorClass, validClass);
+        },
+        errorPlacement: function(error, element){
+          error.appendTo(element.closest('.form-group'));
+        }
+      });
     });
 	}
 
