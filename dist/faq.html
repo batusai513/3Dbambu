@@ -161,11 +161,11 @@
               <p>
                 Mantente al tanto de las promociones, <br> noticias y concursos
               </p>
-              <form class="form-inline js-contact-form" action="/formmail.php" name="newsletter_mail">
+              <form class="form-inline js-contact-form" method="post" action="/formmail.php" name="newsletter_mail">
                 <input type="hidden" name="recipients" value="comercial@3dbambu.co">
                 <div class="form-group">
                 <label for="newsletter" class="sr-only">Suscribete a nuestro newsletter</label>
-                  <input id="newsletter" name="newsletter" placeholder="Correo Electrónico" class="form-control newsletter__input input--large">
+                  <input required id="newsletter" name="newsletter" placeholder="Correo Electrónico" class="form-control newsletter__input input--large">
                 </div>
                 <input type="submit" class="button button--large button--primary text-uppercase" value="Suscribirme">
               </form>
@@ -187,6 +187,6 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-        <script src="scripts/42eba43f.main.js"></script>
+        <script src="scripts/4559254c.main.js"></script>
 </body>
 </html>
