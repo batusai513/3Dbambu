@@ -45,6 +45,14 @@ var Main = (function(window, $){
         }
       });
     });
+
+    $('.js-menu-link').on('click', function(e){
+      e.preventDefault();
+      var $this = $(this),
+          $href = $this.attr('href');
+      console.log($href);
+      $($href).toggle();
+    });
 	}
 
 	return{

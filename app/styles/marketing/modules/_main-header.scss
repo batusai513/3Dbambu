@@ -10,6 +10,15 @@
 
 .main-navigation{
 	font-weight: 400;
+	display: none;
+	@media #{$medium} {
+		display: block!important;
+	}
+	@media #{$medium-max} {
+		position: absolute;
+		width: 100%;
+		left: 0;
+	}
 }
 
 .main-navigation__item{
@@ -22,9 +31,22 @@
 		&:hover{
 			color: white;
 		}
+		@media #{$medium-max} {
+			color: black;
+			display: block;
+			&:hover{
+				color: gray;
+			}
+		}
 	}
 	&.is-active a{
 		background-color: rgba(white, 0.22);
+	}
+	@media #{$medium-max} {
+		z-index: 2;
+		background-color: white;
+		display: list-item;
+		text-align: center;
 	}
 }
 
@@ -39,10 +61,12 @@
 }
 
 .header__logo-area{
-	@extend %small--one-third;
+	@extend %medium--one-third;
+	@extend %two-thirds;
 }
 
 .header__navigation-area{
-	@extend %small--two-thirds;
+	@extend %medium--two-thirds;
+	@extend %one-third;
 	text-align: right;
 }

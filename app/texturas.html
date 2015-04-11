@@ -18,6 +18,11 @@
     <!-- build:css(.tmp) styles/hglstyles.css -->
     <link rel="stylesheet" href="styles/hglstyles.css">
     <!-- endbuild -->
+    <!-- build:js scripts/vendor/respond.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/respond/dest/respond.src.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -37,7 +42,8 @@
               </a>
             </h1>
           </div><div class="header__navigation-area">
-            <nav class="main-navigation">
+            <a href="#main-navigation" class="menu-link js-menu-link"><span></span></a>
+            <nav class="main-navigation" id="main-navigation">
               <ul class="nav flush--bottom">
                 <li class="nav__item main-navigation__item is-active">
                   <a href="texturas.html">Texturas de Paneles</a>
