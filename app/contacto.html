@@ -76,8 +76,11 @@
         </p>
         <div class="contact-container">
           <div class="contact-form">
-            <form action="/formmail.php" novalidate="novalidate" name="contacto_mail" class="js-contact-form" method="post">
-              <input type="hidden" name="recipients" value="comercial@3dbambu.co, gerencia@3dbambu.co, richard.batusai@gmail.com">
+            <form action="/formmail.php" novalidate="novalidate" name="contacto_mail" class="js-contact-form" method="post" enctype="multipart/form-data">
+              <input type="hidden" name="recipients" value="comercial@3dbambu.co, gerencia@3dbambu.co">
+              <input type="hidden" name="required" value="nombre:Falta el nombre, telefono:Falta el telefono, email:Fata el correo, ciudad:falta la ciudad">
+              <input type="hidden" name="derive_fields" value="email=email,realname=nombre">
+              <input type="hidden" name="good_url" value="/good.html">
               <div class="grid">
                 <div class="grid__item small--one-half">
                   <div class="form-group has-feedback has-feedback--reverse">
@@ -130,7 +133,7 @@
                   </div>
                 </div><div class="grid__item medium--one-third">
                   <div class="form-group has-feedback has-feedback--reverse">
-                    <label class="sr-only" for="pic">Empresa</label>
+                    <label class="sr-only" for="pic">Imagen</label>
                     <input type="file" id="pic" name="pic" accept="image/*" class="form-control input--large">
                     <span class="icon-store icon-lg form-control-feedback"></span>
                   </div>
@@ -234,6 +237,7 @@
               </p>
               <form class="form-inline js-contact-form" method="post" action="/formmail.php" name="newsletter_mail">
                 <input type="hidden" name="recipients" value="comercial@3dbambu.co">
+                <input type="hidden" name="good_url" value="/good.html">
                 <div class="form-group">
                 <label for="newsletter" class="sr-only">Suscribete a nuestro newsletter</label>
                   <input required id="newsletter" name="newsletter" placeholder="Correo Electrónico" type="text" class="form-control newsletter__input input--large">
