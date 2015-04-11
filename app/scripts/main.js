@@ -41,7 +41,7 @@ var Main = (function(window, $){
           $(el).parents('.form-group').removeClass(errorClass, validClass);
         },
         errorPlacement: function(error, element){
-          error.appendTo(element.closest('.form-group'));
+          error.addClass('form-error-text').appendTo(element.closest('.form-group'));
         }
       });
     });

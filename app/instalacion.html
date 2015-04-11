@@ -79,11 +79,13 @@
     <section class="pane pane--medium text-center bg-lighter-gray">
       <div class="container text-center">
         <p>Mantente al tanto de promociones, noticias y concursos. <br> Suscribete a nuestro newsletter.</p>
-        <form action="" class="form-inline">
+        <form class="form-inline js-contact-form" method="post" action="/formmail.php" name="newsletter_mail_2">
+          <input type="hidden" name="recipients" value="comercial@3dbambu.co">
           <div class="form-group">
-            <input type="text" class="form-control newsletter__input input--large" placeholder="Correo Electrónico">
+          <label for="newsletter" class="sr-only">Suscribete a nuestro newsletter</label>
+            <input required id="newsletter" name="newsletter" placeholder="Correo Electrónico" type="text" class="form-control newsletter__input input--large">
           </div>
-          <input type="submit" class="button button--primary button--large text-uppercase" value="Suscribirme">
+          <input type="submit" class="button button--large button--primary text-uppercase" value="Suscribirme">
         </form>
       </div>
     </section>
@@ -116,7 +118,7 @@
               <h1 class="epsilon title--bordered">Somos sociales</h1>
                 <ul class="list-unstyled">
                   <li class="">
-                    <a href="https://www.facebook.com/3dbambu">
+                    <a href="https://www.facebook.com/panelesdecorativos.bambu">
                       <span class="icon-facebook icon-2x push-half--right vertical-middle"></span> /3dbambu
                     </a>
                   </li>

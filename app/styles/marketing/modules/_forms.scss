@@ -29,6 +29,10 @@ label,
   color: $label-color;
 }
 
+.form-error-text{
+  display: block;
+}
+
 .label--regular{
   @extend .label;
   font-weight: 400;
@@ -127,6 +131,9 @@ label>sup {
       vertical-align: middle;
       .form-control{
         width: 100%;
+      }
+      &.has-error{
+        vertical-align: top;
       }
     }
 
