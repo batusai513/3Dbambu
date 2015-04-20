@@ -19,3 +19,14 @@
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
 }
+
+.mfp-counter{
+  > .mfp-arrow{
+    display: inline-block;
+    position: relative;
+  }
+  .mfp-arrow-right:before,
+  .mfp-arrow-left:before{
+    border: 0;
+  }
+}

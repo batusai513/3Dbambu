@@ -50,7 +50,6 @@ var Main = (function(window, $){
       e.preventDefault();
       var $this = $(this),
           $href = $this.attr('href');
-      console.log($href);
       $($href).toggle();
     });
 
@@ -60,13 +59,63 @@ var Main = (function(window, $){
         delegate: 'a',
         mainClass: 'mfp-with-zoom mfp-img-mobile',
         gallery: {
-          enabled: true
+          enabled: true,
+          tCounter:[
+          "<button title='previous' type='button' class='mfp-arrow mfp-arrow-left mfp-prevent-close js-mfp-arrow-left'>&lt;</button>",
+          //" %curr% of %total% ",
+          "<button title='next' type='button' class='mfp-arrow mfp-arrow-right mfp-prevent-close js-mfp-arrow-right'>&gt;</button>"
+          ].join(""),
+          arrowMarkup: ''
         },
         zoom: {
           enabled: true,
           duration: 300, // don't foget to change the duration also in CSS
           opener: function(element) {
             return element.find('img');
+          }
+        },
+        callbacks: {
+          open: function() {
+            var container = this.contentContainer,
+                prev = container.find('.js-mfp-arrow-left'),
+                next = container.find('.js-mfp-arrow-right'),
+                _this = this;
+
+            prev.on('click', function(e) {
+                e.preventDefault();
+                _this.prev();
+            });
+
+            next.on('click', function(e) {
+                e.preventDefault();
+                _this.next();
+            });
+          },
+          change: function() {
+            var container = this.contentContainer,
+                prev = container.find('.js-mfp-arrow-left'),
+                next = container.find('.js-mfp-arrow-right'),
+                _this = this;
+
+            prev.on('click', function(e) {
+                e.preventDefault();
+                _this.prev();
+            });
+
+            next.on('click', function(e) {
+                e.preventDefault();
+                _this.next();
+            });
+          },
+          close: function() {
+            var container = this.contentContainer,
+                prev = container.find('.js-mfp-arrow-left'),
+                next = container.find('.js-mfp-arrow-right'),
+                _this = this;
+
+            prev.off('click');
+
+            next.off('click');
           }
         }
       });
